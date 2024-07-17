@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+h1{
+    margin-bottom: 60px;
+    font-size:50px;
+}
+#options{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+    
+}
+button>img{
+    height: 80px;
+}
+.img-button{
+    background-color: transparent;
+    transition: background-color 0.15s, border-color 0.15s;
+    border: 6px solid white;
+    border-radius: 500px;
+    padding: 45px;
+}
+.img-button:hover{
+    cursor: pointer;
+    border-color: #FFF000;
+}
+#options>img:active{
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+}
+#result-win,.result,#result-lose,#result-tie{
+    margin-top: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+#result-win{
+    color: #10a80d;
+}
+#result-lose{
+    color: red;
+}
+#result-tie{
+    color: #FFF000;
+}
+#compare{
+    display: flex;
+    flex:1;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#compare>img{
+    height: 80px;
+    border: 3px solid #FFF000;
+    padding: 30px;
+    border-radius: 100px;
+    margin-right: 20px;
+    margin-left: 20px; 
+
+}
+#left{
+    margin-left: 80px;
+}
+#stats{
+    font-size: 30px;
+}
+#reset{
+    padding: 10px 15px;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: black;
+    border: 3px solid #FFF000;
+    color: #FFF000;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+#reset:hover{
+    background-color: #FFF000;
+    color: black;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #FFF000;
+}
+
+@media screen and (max-width: 800px) {
+    #options{
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        width: 45%;
+    }
+    .img-button{
+        background-color: transparent;
+        transition: background-color 0.15s, border-color 0.15s;
+        border: 6px solid white;
+        border-radius: 500px;
+        padding: 45px;
+        margin-bottom: 30px;
+    }
+    button>img{
+        height: 50px;
+    }
+    #compare{
+        flex-direction: column;
+    }
+    #left{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #result{
+        margin-bottom: 5px;
+    }
+    #top{
+        margin-bottom: 20px;
+    }
+    #stats:first-child{
+        margin-top: 0px;
+    }
+
+}
